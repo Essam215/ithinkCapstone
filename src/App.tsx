@@ -20,8 +20,6 @@ import { Profile } from "./pages/Profile";
 import { Admin } from "./pages/Admin";
 import { PHPMembers } from "./pages/PHPMembers";
 import { AdminProtectedRoute } from "./components/AdminProtectedRoute";
-import React from "react";
-
 function App() {
   return (
     <ThemeProvider>
