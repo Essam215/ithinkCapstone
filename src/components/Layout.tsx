@@ -74,7 +74,6 @@ export const Layout = ({ children }: LayoutProps) => {
   return (
     <div className="min-h-screen bg-white relative overflow-x-hidden">
       {/* Animated Waves Background */}
-      <div className="fixed inset-0 -z-10 pointer-events-none select-none">
         {[...Array(7)].map((_, i) => {
           // 5 theme colors
           const colors = [
@@ -288,16 +287,6 @@ export const Layout = ({ children }: LayoutProps) => {
     </div>
   );
 };
-
-const renderBoxes = () => {
-  const leftBoxColors = ["#19316d", "#3972a1", "#f8d32d", "#b42940", "#198a40"];
-  const rightBoxColors = [
-    "#198a40",
-    "#b42940",
-    "#f8d32d",
-    "#3972a1",
-    "#19316d",
-  ];
 
   const leftBoxColor =
     leftBoxColors[Math.floor(Math.random() * leftBoxColors.length)];
